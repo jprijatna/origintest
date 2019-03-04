@@ -1,0 +1,586 @@
+/* Enter your custom styles here */
+
+.brandHeader {
+    background-color: #ffffff !important;
+    border-bottom: 2px solid #f80004;
+}
+
+.bgImage {
+    /*background-image: url('http://www.lhd.com.au/files/8614/9915/0704/sydney_traffic_lights_v2.jpg');*/
+        background-image: url('./origin_windmill.jpg');
+
+    background-size: 1920px 1080px;
+    /*background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Royal_Australian_Navy_Canberra_Class_Amphibious_Ship_HMAS_Canberra_%28L02%29_Arrives_at_Joint_Base_Pearl_Harbor-Hickam_During_RIMPAC_16.ogv/1920px--Royal_Australian_Navy_Canberra_Class_Amphibious_Ship_HMAS_Canberra_%28L02%29_Arrives_at_Joint_Base_Pearl_Harbor-Hickam_During_RIMPAC_16.ogv.jpg');*/
+    /*background-image: url('http://api.wallpapers4k.xyz/resource/fileuploads/photos/albums/1501/6b5b827c-3d53-4fc0-95b9-08f03e35ab16.jpg?w=1920&h=1080&mode=crop');*/
+}
+
+.sapMShellBrandingBar {
+    height: 0px;
+}
+
+.calendarHeight .sapMListTbl {
+    height: 592px;
+}
+
+.sapMPageHeader::before {
+    border-top-width: 0rem;
+}
+
+.sapMBarPH {
+    background-color: #000000;
+}
+
+.sapUiUfdShellBrand {
+    background-color: yellowgreen;
+}
+
+.myShell .sapUiUfdShellHeader {
+    background-color: black;
+}
+
+.myShell .sapUiUfdShellBrand {
+    background-color: yellowgreen;
+}
+
+.test .sapContrast.sapMIBar.sapMFooter-CTX {
+    background-color: black !important;
+    border-top-color: yellowgreen;
+    border-top-width: thick;
+}
+
+.floatPanel {
+    z-index: 2;
+    background-color: #f1f1f1;
+    opacity: 0.8;
+   border: 2px solid red;
+}
+
+.floatText {
+	z-index: 2;
+}
+
+.floatPanel2 {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    /*right: 10px;*/
+    z-index: 2;
+    background-color: #ACB0BD;
+    opacity: 0.8;
+}
+
+.floatPanel3 {
+    position: absolute;
+    top: 200px;
+    left: 5px;
+    /*right: 10px;*/
+    z-index: 2;
+    background-color: #000000;
+    opacity: 1.0;
+}
+
+.floatPanel4 {
+    position: absolute;
+    top: 200px;
+    left: 5px;
+    /*right: 10px;*/
+    z-index: 2;
+    background-color: #000000;
+    opacity: 0.9;
+}
+
+.floatSubPanel2 {
+    /*right: 10px;*/
+    z-index: 2;
+    border-bottom: 1px solid gray;
+}
+
+.floatSubPanel {
+    /*right: 10px;*/
+    z-index: 2;
+    border: 1px solid gray;
+}
+
+.missionTile {
+    /*right: 10px;*/
+    /*z-index: 2;*/
+    background-color: #404D61;
+    border: 2px solid ;
+}
+
+.missionTileSelect {
+    /*right: 10px;*/
+    /*z-index: 2;*/
+    background-color: #404D61;
+    border: 2px solid #32d632;
+}
+
+.optionTileBottomRight {
+    /*right: 10px;*/
+    /*z-index: 2;*/
+    background-color: #404D61;
+    border-bottom: 2px solid #CECECE;
+    border-right: 2px solid #CECECE;
+}
+
+.optionTileBottom {
+    background-color: #404D61;
+    border-bottom: 2px solid #CECECE;
+}
+
+.optionTileTopRight {
+    /*right: 10px;*/
+    /*z-index: 2;*/
+    background-color: #404D61;
+    border-top: 2px solid #CECECE;
+    border-right: 2px solid #CECECE;
+}
+
+.optionTileTop {
+    background-color: #404D61;
+    border-top: 2px solid #CECECE;
+}
+
+.missionTileSelect {
+    /*right: 10px;*/
+    /*z-index: 2;*/
+    background-color: #1B2432;
+    border: 2px solid #CECECE;
+    /*opacity: 0.9;*/
+}
+
+.listCSS .sapMLnk {
+    color: cyan;
+}
+
+.listCSS .sapMLabel {
+    color: #CECECE;
+}
+
+.listCSS {
+    background: #404D61 !important;
+}
+
+.shipTile {
+    background-color: #404D61;
+    /*border: 2px solid #CECECE;*/
+    /*opacity: 0.9;*/
+    border-radius: 0rem;
+    box-shadow: 0 0 0 0px white;
+}
+
+.shipTileError {
+    background-color: #1B2432;
+    border: 2px solid #CECECE;
+    /*opacity: 0.9;*/
+    border-radius: 0rem;
+    box-shadow: 0 0 0 0px white;
+}
+
+.descTile {
+    background-color: #404D61;
+    /*border-right: 2px solid #CECECE;*/
+    /*border-left: 2px solid #CECECE;*/
+    /*border-bottom: 2px solid #CECECE;*/
+    /*opacity: 0.9;*/
+    border-top: 2px solid #1B2432;
+}
+
+.descTile .sapMLabel {
+    font-size: 70%;
+    color: #CECECE;
+}
+
+.detailPercent {
+    font-size: 350%;
+    color: #BB0000;
+}
+
+.detailShip {
+    font-size: 180%;
+    color: #FFFFFF;
+}
+
+.detailType {
+    font-size: 130%;
+    color: #CECECE;
+}
+
+.detailProfile {
+    color: #CECECE;
+    font-size: 180%;
+}
+
+.detailFunction {
+    color: #CECECE;
+    font-size: 150%;
+}
+
+.detailStatus {
+    color: #FFFFFF;
+    font-size: 120%;
+}
+
+.detailStatusCount {
+    color: #CECECE;
+    font-size: 120%;
+}
+
+.descTileSelect {
+    background-color: #404D61;
+    border-top: 2px solid #1B2432;
+    /*border-right: 2px solid #404D61;*/
+    /*border-left: 2px solid #404D61;*/
+    /*border-bottom: 2px solid #404D61;*/
+    /*opacity: 0.9;*/
+}
+
+.optionText {
+    font-size: 160%;
+    color: #CECECE;
+}
+
+.optionType {
+    font-size: 200%;
+    color: #FFFFFF;
+}
+
+.descTileSelect .sapMLabel {
+    font-size: 70%;
+    color: #CECECE;
+}
+
+.tileWidth {
+    width: 14rem !important;
+}
+
+.tileWidth .sapMNC {
+    width: 12rem;
+}
+
+.shipTileSelect {
+    background-color: #404D61;
+    border: 1px solid #404D61;
+    border-radius: 0rem;
+    box-shadow: 0 0 0 0px white;
+}
+
+.progressWidth {
+    height: 2rem !important;
+    min-width: 33rem !important;
+    border-radious: 0rem !important;
+}
+
+.detailTile {
+    background-color: #404D61;
+    border: 1px solid #CECECE;
+    /* CECECE*/
+    border-radius: 0rem;
+    box-shadow: 0 0 0 0px white;
+}
+
+.detailTileTop {
+    background-color: #404D61;
+    border-top: 1px solid #CECECE;
+    /* CECECE*/
+    border-radius: 0rem;
+    box-shadow: 0 0 0 0px white;
+}
+
+.detailTileTopRight {
+    background-color: #404D61;
+    border-top: 1px solid #CECECE;
+    /* CECECE*/
+    border-right: 1px solid #CECECE;
+    /* CECECE*/
+    border-radius: 0rem;
+    box-shadow: 0 0 0 0px white;
+}
+
+.errorIcon .sapMNCIconImage {
+    color: #BB0000;
+    font-color: #BB0000;
+}
+
+.successIcon .sapMNCIconImage {
+    color: #2B7D2B;
+}
+
+.successChance .sapMTileCntFooterTextColorNeutral {
+    color: #2B7D2B !important;
+}
+
+.errorChance .sapMTileCntFooterTextColorNeutral {
+    color: #BB0000 !important;
+}
+
+.errorPercent {
+    color: #BB0000;
+    font-size: 400%;
+}
+
+.errorLikelihood {
+    color: #BB0000;
+}
+
+.goodPercent {
+    color: #FFFFFF;
+    font-size: 400%;
+}
+
+.goodLikelihood {
+    color: #FFFFFF;
+}
+
+.hmasName {
+    font-size: 120%;
+    color: #FFFFFF;
+}
+
+.hmasType {
+    font-size: 120%;
+    color: #CECECE;
+}
+
+.shipFont {
+    font-color: #FFFFFF;
+}
+
+.shipTile .sapMGTHdrTxt>.sapMText {
+    color: #FFFFFF;
+}
+
+.shipTile .sapMGTSubHdrTxt {
+    color: #CECECE;
+}
+
+.shipTileSelect .sapMGTHdrTxt>.sapMText {
+    color: #FFFFFF;
+}
+
+.shipTileSelect .sapMGTSubHdrTxt {
+    color: #CECECE;
+}
+
+.floatSubPanel3HalfSelect {
+    /*right: 10px;*/
+    /*z-index: 2;*/
+    background-color: #2F4F4F;
+    border: 2px solid green;
+}
+
+.floatSubPanel3Select {
+    /*right: 10px;*/
+    /*z-index: 2;*/
+    background-color: #2F4F4F;
+    border: 5px solid green;
+}
+
+.floatSubPanelBorder {
+    /*right: 10px;*/
+    /*z-index: 2;*/
+    border: 5px solid green;
+}
+
+.floatSubPanel4 {
+    position: absolute;
+    left: 650px;
+    bottom: 20px;
+    background-color: #2F4F4F;
+    border: 1px solid gray;
+    opacity: 0.9;
+}
+
+.floatStatPanel {
+    /*right: 10px;*/
+    z-index: 2;
+    border: 1px solid gray;
+    opacity: 0.9;
+}
+
+.blackPanel {
+    color: black !important;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 0px;
+    top: 0px;
+    z-index: -1000;
+    overflow: hidden;
+}
+
+.videoPlayer {
+    min-height: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.timeline {
+    position: absolute;
+    top: 50px;
+    z-index: 99;
+}
+
+.xtraLargeFont {
+    font-size: 200%;
+    color: #00ff00;
+}
+
+.missionType {
+    font-size: 180%;
+    color: #ffffff
+}
+
+.dashLabel2 {
+    font-size: 135%;
+    color: #ffffff
+}
+
+.statusText {
+    font-size: 120%;
+    color: #fafafa;
+}
+
+.dashStat {
+    font-size: 350%;
+    color: #ffffff;
+}
+
+.dashStatRed {
+    font-size: 250%;
+    color: #ff3333;
+}
+
+.dashStatBlue {
+    font-size: 250%;
+    color: #0080ff;
+}
+
+.dashStatGreen {
+    font-size: 250%;
+    color: #00205B;
+}
+
+.dashStatGreenSmall {
+    font-size: 150%;
+    color: #32d632;
+}
+
+.dashStatGreySmall {
+    font-size: 150%;
+    color: #ffffff;
+}
+
+.calendarColor {
+    color: #404D61;
+    background-color: #ffffff;
+}
+
+.calendarColor .sapMList {
+    color: #404D61;
+    background-color: #404D61;
+}
+
+.calendarColor .sapMTitle {
+    color: #FFFFFF;
+}
+
+.calendarColor .sapUiCalItemText {
+    color: #FFFFFF;
+}
+
+.calendarColor .sapUiCalHead {
+    background-color: #404D61 !important;
+}
+
+.calendarColor .sapUiCalHead>.sapUiCalHeadB {
+    color: #FFFFFF;
+}
+
+.calendarColor .sapUiCalItem {
+    background-color: #404D61;
+}
+
+.calendarColor .sapUiCalItemNow>.sapUiCalItemText {
+    border: 0rem solid #404D61;
+}
+
+.calendarColor .sapMSlt {
+    background: #404D61;
+    border: 0px transparent;
+}
+
+.calendarColor .sapMSlt>.sapMSltLabel {
+    color: #404D61;
+}
+
+.calendarColor .sapMBtnInner {
+    color: #404D61;
+    text-shadow: 0 0 0rem transparent;
+}
+
+.calendarColor .sapUiCalItem {
+    border: 0rem solid white !important;
+}
+
+.calendarColor .sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors)>.sapMList>table>tbody>tr.sapMLIB:nth-child(even):not(.sapMListTblSubRow) {
+    background-color: #404D61;
+}
+
+.calendarColor .sapUiCalendarRowAppsInt {
+    border: 0;
+}
+
+.calendarColor .sapMSLIImgIcon {
+    color: #FFFFFF;
+}
+
+.calendarColor .sapMSLITitle {
+    color: #FFFFFF;
+}
+
+.calendarColor .sapMSLIDescription {
+    color: #CECECE;
+}
+
+.calendarColor .sapMLIB.sapMListTblRow {
+    background-color: #404D61 !important;
+}
+
+.calendarColor .sapMLIBShowSeparator>td {
+    border-right: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+}
+
+.calendarColor .sapUiCalItems {
+    display: inline;
+}
+
+.missionDescription {
+    font-size: 250%;
+    color: #CECECE;
+}
+
+.dashMetric {
+    font-size: 250%;
+    color: #ffffff;
+}
+
+.hbox_tile_LookAlike {
+    /*border: 1px solid black;*/
+    /*-moz-box-shadow: 0 0 5px 2px #fff;*/
+    /*box-shadow: 0 0 5px 2px #b9b1b1;*/
+    background-color: #000000;
+}
+
+.myStyle {
+    height: 21rem;
+    width: 11rem;
+}

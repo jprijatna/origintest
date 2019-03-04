@@ -1,0 +1,37 @@
+<mvc:View controllerName="DPROP.controller.Main" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns:tnt="sap.tnt" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:acc="DPROP.control" xmlns:l="sap.ui.layout" xmlns:vk="sap.ui.vk"
+	xmlns:unified="sap.ui.unified">
+	<tnt:ToolHeader id="brandHeader" class="brandHeader">
+		<Image src="images/Deloitte_Logo.png" height="50px" class="sapUiMediumMarginBegin sapUiTinyMarginTop sapUiTinyMarginBottom"/>
+		<ToolbarSpacer/>
+		<ToolbarSpacer/>
+		<Image src="images/Origin_logo.png" height="50px" class="sapUiMediumMarginEnd sapUiTinyMarginTop sapUiTinyMarginBottom"/>
+	</tnt:ToolHeader>
+	<App id="SplitApp1">
+		<Page id="videoPage" title="Deloitte Digital Twin" class="sapUiStdPage test bgImage" showHeader="false">
+			<content>
+				<!--<Button text="O" press="changeView"/>-->
+				<!--<Button text="Break" press="breakOpenModel"/>-->
+				<VBox id="statisticsView" width="100%" height="900px" justifyContent="Center" alignItems="Center" visible="true">
+					<HBox id="video_panel" width="100%" height="100%" justifyContent="Center" alignItems="Center" visible="true">
+						<!--<acc:ChartJSControl width="500" height="250" responsive="true" chartType="bar" id="videoFootcountChart"-->
+						<!--	options="{title: {display: 'true', text: 'Aggregated Footcount'}}"/>-->
+						<VBox width="30%" justifyContent="Center" alignItems="Center" class="sapUiLargeMarginEnd floatPanel">
+							<acc:ChartJSControl width="250" height="250" responsive="true" chartType="doughnut" id="temperatureChart"
+								options="{cutoutPercentage: '80', title: {display: 'true', text: 'Temperature Gauge', fontColor: 'black', fontSize: 18}, legend: { display: false }}"/>
+						</VBox>
+						<VBox width="30%" justifyContent="Center" alignItems="Center" class="sapUiLargeMarginEnd floatPanel">
+							<acc:ChartJSControl width="250" height="250" responsive="true" chartType="doughnut" id="humidityChart"
+								options="{cutoutPercentage: '80', title: {display: 'true', text: 'Humidity Gauge', fontColor: 'black', fontSize: 18}, legend: { display: false }}"/>
+						</VBox>
+						<VBox width="30%" justifyContent="Center" alignItems="Center" class="floatPanel">
+							<acc:ChartJSControl width="250" height="250" responsive="true" chartType="doughnut" id="pressureChart"
+								options="{cutoutPercentage: '80', title: {display: 'true', text: 'Pressure Gauge', fontColor: 'black', fontSize: 18}, legend: { display: false }}"/>
+						</VBox>
+					</HBox>
+				</VBox>
+			</content>
+		</Page>
+	</App>
+</mvc:View>
