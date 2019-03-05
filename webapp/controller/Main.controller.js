@@ -16,10 +16,19 @@ sap.ui.define([
 	var temperatureLimit = 100 - temperature;
 	var humidityLimit = 100 - humidity;
 	var pressureLimit = 100 - pressure;
+	
+	var temperatureLabel;
+	var humidityLabel;
+	var pressureLabel;
 
 	return Controller.extend("DPROP.controller.Main", {
 
 		onAfterRendering: function () {
+			
+			temperatureLabel = this.getView().byId("temperatureLabel");
+			humidityLabel = this.getView().byId("humidityLabel");
+			pressureLabel = this.getView().byId("pressureLabel");
+			
 			temperatureChart = this.getView().byId("temperatureChart");
 
 			var temperatureData = {
@@ -81,7 +90,7 @@ sap.ui.define([
 
 		onInit: function () {
 
-			var socket = io('http://35.184.43.189:3000/');
+			var socket = io('http://35.188.154.74:3000/');
 			socket.on('connect', function () {
 				//socket.emit('customer', "testing dual emit");
 				console.log(socket.id);
@@ -100,6 +109,10 @@ sap.ui.define([
 				temperature = parseInt(response.temp);
 				humidity = parseInt(response.humid);
 				pressure = parseInt(response.pressure);
+				
+				temperatureLabel.setText(response.temp + "°C");
+				humidityLabel.setText(response.humid + "%");
+				pressureLabel.setText(response.pressure + "P");
 
 				var temperatureData = {
 					datasets: [{

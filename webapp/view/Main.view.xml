@@ -9,25 +9,36 @@
 		<Image src="images/Origin_logo.png" height="50px" class="sapUiMediumMarginEnd sapUiTinyMarginTop sapUiTinyMarginBottom"/>
 	</tnt:ToolHeader>
 	<App id="SplitApp1">
-		<Page id="videoPage" title="Deloitte Digital Twin" class="sapUiStdPage test bgImage" showHeader="false">
+		<Page id="videoPage" title="Deloitte Digital Twin" class="sapUiStdPage bgImage" showHeader="false">
 			<content>
 				<!--<Button text="O" press="changeView"/>-->
 				<!--<Button text="Break" press="breakOpenModel"/>-->
 				<VBox id="statisticsView" width="100%" height="900px" justifyContent="Center" alignItems="Center" visible="true">
 					<HBox id="video_panel" width="100%" height="100%" justifyContent="Center" alignItems="Center" visible="true">
-						<!--<acc:ChartJSControl width="500" height="250" responsive="true" chartType="bar" id="videoFootcountChart"-->
-						<!--	options="{title: {display: 'true', text: 'Aggregated Footcount'}}"/>-->
 						<VBox width="30%" justifyContent="Center" alignItems="Center" class="sapUiLargeMarginEnd floatPanel">
-							<acc:ChartJSControl width="250" height="250" responsive="true" chartType="doughnut" id="temperatureChart"
-								options="{cutoutPercentage: '80', title: {display: 'true', text: 'Temperature Gauge', fontColor: 'black', fontSize: 18}, legend: { display: false }}"/>
+							<VBox width="100%" height="100%" justifyContent="Center" class="chartPanel" alignItems="Center">
+								<Label id="temperatureLabel" text="0°C" class="labelPos"/>
+							</VBox>
+							<VBox width="100%" height="100%" justifyContent="Center" class="chartPanel" alignItems="Center">
+								<acc:ChartJSControl width="900" height="900" responsive="true" chartType="doughnut" id="temperatureChart"
+									options="{cutoutPercentage: '90', title: {display: 'true', text: 'Temperature Gauge', fontColor: 'black', fontSize: 18}, legend: { display: false }}"/>
+							</VBox>
 						</VBox>
 						<VBox width="30%" justifyContent="Center" alignItems="Center" class="sapUiLargeMarginEnd floatPanel">
-							<acc:ChartJSControl width="250" height="250" responsive="true" chartType="doughnut" id="humidityChart"
-								options="{cutoutPercentage: '80', title: {display: 'true', text: 'Humidity Gauge', fontColor: 'black', fontSize: 18}, legend: { display: false }}"/>
+							<VBox width="100%" height="100%" justifyContent="Center" class="chartPanel" alignItems="Center">
+								<Label id="humidityLabel" text="0%" class="labelPos"/>
+							</VBox>
+							<VBox width="100%" height="100%" justifyContent="Center" class="chartPanel" alignItems="Center"><acc:ChartJSControl width="900" height="900" responsive="true" chartType="doughnut" id="humidityChart"
+								options="{cutoutPercentage: '90', title: {display: 'true', text: 'Humidity Gauge', fontColor: 'black', fontSize: 18}, legend: { display: false }}"/>
+							</VBox>
 						</VBox>
 						<VBox width="30%" justifyContent="Center" alignItems="Center" class="floatPanel">
-							<acc:ChartJSControl width="250" height="250" responsive="true" chartType="doughnut" id="pressureChart"
-								options="{cutoutPercentage: '80', title: {display: 'true', text: 'Pressure Gauge', fontColor: 'black', fontSize: 18}, legend: { display: false }}"/>
+							<VBox width="100%" height="100%" justifyContent="Center" class="chartPanel" alignItems="Center">
+								<Label id="pressureLabel" text="0P" class="labelPos"/>
+							</VBox>
+							<VBox width="100%" height="100%" justifyContent="Center" class="chartPanel" alignItems="Center"><acc:ChartJSControl width="900" height="900" responsive="true" chartType="doughnut" id="pressureChart"
+								options="{cutoutPercentage: '90', title: {display: 'true', text: 'Pressure Gauge', fontColor: 'black', fontSize: 18}, legend: { display: false }}"/>
+							</VBox>
 						</VBox>
 					</HBox>
 				</VBox>

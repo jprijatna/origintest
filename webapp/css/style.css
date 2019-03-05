@@ -7,9 +7,9 @@
 
 .bgImage {
     /*background-image: url('http://www.lhd.com.au/files/8614/9915/0704/sydney_traffic_lights_v2.jpg');*/
-        background-image: url('./origin_windmill.jpg');
-
+    background-image: url('./origin_windmill.jpg');
     background-size: 1920px 1080px;
+    z-index:1;
     /*background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Royal_Australian_Navy_Canberra_Class_Amphibious_Ship_HMAS_Canberra_%28L02%29_Arrives_at_Joint_Base_Pearl_Harbor-Hickam_During_RIMPAC_16.ogv/1920px--Royal_Australian_Navy_Canberra_Class_Amphibious_Ship_HMAS_Canberra_%28L02%29_Arrives_at_Joint_Base_Pearl_Harbor-Hickam_During_RIMPAC_16.ogv.jpg');*/
     /*background-image: url('http://api.wallpapers4k.xyz/resource/fileuploads/photos/albums/1501/6b5b827c-3d53-4fc0-95b9-08f03e35ab16.jpg?w=1920&h=1080&mode=crop');*/
 }
@@ -48,23 +48,34 @@
     border-top-width: thick;
 }
 
-.floatPanel {
-    z-index: 2;
-    background-color: #f1f1f1;
-    opacity: 0.8;
-   border: 2px solid red;
+.labelPos {
+    font-size: 350%;
 }
 
+.chartPanel {
+	position: absolute;
+    z-index: 10;
+}
+
+.floatPanel {
+    background-color: #f1f1f1;
+    opacity: 0.8;
+    border: 2px solid red;
+    z-index: 3;
+    min-width: 30%;
+    min-height: 60%;
+    position: relative !important;
+}
+
+
 .floatText {
-	z-index: 2;
+    z-index: 2;
 }
 
 .floatPanel2 {
-    position: absolute;
     top: 12px;
     right: 12px;
     /*right: 10px;*/
-    z-index: 2;
     background-color: #ACB0BD;
     opacity: 0.8;
 }
@@ -105,7 +116,7 @@
     /*right: 10px;*/
     /*z-index: 2;*/
     background-color: #404D61;
-    border: 2px solid ;
+    border: 2px solid;
 }
 
 .missionTileSelect {
