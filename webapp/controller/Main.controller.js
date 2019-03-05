@@ -110,6 +110,10 @@ sap.ui.define([
 				humidity = parseInt(response.humid);
 				pressure = parseInt(response.pressure);
 				
+				temperatureLimit = 100 - temperature;
+				humidityLimit = 100 - humidity;
+				pressureLimit = 100 - pressure;
+				
 				temperatureLabel.setText(response.temp + "°C");
 				humidityLabel.setText(response.humid + "%");
 				pressureLabel.setText(response.pressure + "P");
@@ -132,8 +136,6 @@ sap.ui.define([
 				temperatureChart.setData(temperatureData);
 				temperatureChart.update();
 
-				humidityChart = this.getView().byId("humidityChart");
-
 				var humidityData = {
 					datasets: [{
 						data: [humidity, humidityLimit],
@@ -151,8 +153,6 @@ sap.ui.define([
 
 				humidityChart.setData(humidityData);
 				humidityChart.update();
-
-				pressureChart = this.getView().byId("pressureChart");
 
 				var pressureData = {
 					datasets: [{
